@@ -74,10 +74,11 @@ section.main{
     text-align: center;
 }
 .box > p{
+    margin: 3px 0;
+    text-align: center;
     padding: 5px 10px;
     font-size: 17px;
     border-bottom: 2px solid white;
-    text-align: left;
     cursor: pointer;
 }
 .box > p:hover{
@@ -115,39 +116,9 @@ section.main{
     border-radius: 15px;
     background-color: rgb(236, 178, 30);
 }
-.avaliacao-corporal{
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: aliceblue;
-    padding: 20px;
-    min-height: 200px;
-    border-radius: 10px;
-}
-.consultoria-personal{
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: aliceblue;
-    padding: 20px;
-    min-height: 200px;
-    border-radius: 10px;
-}
-.consultoria-presencial-online{
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: aliceblue;
-    padding: 20px;
-    min-height: 200px;
-    border-radius: 10px;
-}
+.avaliacao-corporal,
+.consultoria-personal,
+.consultoria-presencial-online,
 .atendimento-individual{
     display: none;
     position: absolute;
@@ -159,6 +130,7 @@ section.main{
     min-height: 200px;
     border-radius: 10px;
 }
+
 /*buttons*/
 .buttons BUTTon{
     margin-bottom: 20px;
@@ -183,12 +155,29 @@ section.main{
     cursor: pointer;
 } 
 
-@media screen and (max-width: 1024px){
-}
+
 @media screen and (max-width: 700px){
+    section.main{
+        margin-left:10%;
+        width:80% ;
+    }
+}
+    
+@media screen and (max-width: 568px){
     section.main{
         margin-left:5%;
         width:90% ;
     }
+    .avaliacao-corporal,
+.consultoria-personal,
+.consultoria-presencial-online,
+.atendimento-individual{
+    left: 20%;
+    top: 20%;
+    transform: translate(-12%,-12%);
+    background-color: aliceblue;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
 }
-    
+}
