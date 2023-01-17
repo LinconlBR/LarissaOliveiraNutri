@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Larissa Oliveira</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />     
+    </head>
+    <body>
+        <section class="main">
+            
+            <div class="intro">
+                <div class="logo"><img src="img/DEPOIMENTO1.png" alt=""></div>
+                <h1>Larissa Oliveira</h1>
+                <h3>Nutricionista</h3>
+                <br>
+                <BUTTon id='b1' onclick="window.location.href = 'https://www.instagram.com/nutri_laricoliv/'">
+                     @nutri_laricoliv
+                </BUTTon>
+                
+            </div> <!--intro-->
+
+            <div class="servicos">
+                <div class="mensagens-servicos">
+                    <div class="avaliacao-corporal">
+                        <div onclick="fecharAvaliacaoCorporal()" class="close">X</div>
+                        <h1>Avaliação Corporal </h1>
+                        <p> A avaliação da composição corporal é um dos parâmetros utilizados para avaliar a evolução do paciente 
+                            ao longo do processo, onde há aferição do peso, circunferências e dobras cutâneas(cálculo do percentual de gordura corporal).
+                            *Válido para consultas presenciais.
+                        </p>
+                    </div>
+                    <div class="consultoria-personal">
+                        <div onclick="fecharConsultoriaPersonal()" class="close">X</div>
+                        <h1>Consultoria com o Personal </h1>
+                        <p> Desenvolvemos um plano de consultoria online específico para o paciente que deseja ter o acompanhamento tanto nos treinos 
+                            quanto na alimentação. Avaliamos em conjunto seus objetivos, necessidades, nível e intensidadede treinamento, e com isso 
+                            trabalhamos juntos na melhor estratégia nutricional e de treinos. Através dessa consultoria o 
+                             paciente/aluno tem a capacidade de conquistar seus resultados de maneira mais assertiva.
+                        </p>
+                    </div>
+                    <div class="consultoria-presencial-online">
+                        <div onclick="fecharConsultoriaPresencialOnline()" class="close">X</div>
+                        <h1>Consultoria Presencial e Online </h1>
+                        <p> Trabalho tanto com consultas presenciais (São Paulo capital) quanto com consultas online, onde há flexibilidade 
+                            de horário e possibilidade de manter atendimento à distância.
+                        </p>
+                    </div>
+                    <div class="atendimento-individual">
+                        <div onclick="fecharAtendimentoIndividual()" class="close">X</div>
+                        <h1>Atendimento Individualizado </h1>
+                        <p> Cada paciente é único, portanto, seu plano alimentar é individualizado, levando em consideração seus hábitos alimentares, necessidades e objetivos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1>Serviços</h1>
+                    <br>
+                    <p onclick="abrirAvaliacaoCorporal()">Avaliação corporal </p>
+                    <p  onclick="abrirConsultoriaPersonal()" style="text-align: end;"> Consultoria com personal</p>
+                    <p onclick="abrirConsultoriaPresencialOnline()" >Consultoria presencial e online </p>
+                    <p onclick="abrirAtendimentoIndividual()"style="text-align:end;"> Atendimento individualizado</p>
+                </div>
+
+
+            </div><!--servicos-->
+            <div class="buttons">
+                <BUTTon onclick="window.location.href = 'https://wa.me/5511977594660'">
+                    Agendar Consulta 
+                </BUTTon>            
+            </div>
+            <a href=""></a>
+        </section><!--main-->
+        <script>  
+            var queryMensagens = document.querySelector('.mensagens-servicos');
+            function abrirAvaliacaoCorporal(){
+                queryMensagens.style.display="block";
+                document.querySelector('.avaliacao-corporal').style.display="block";
+            }
+            function fecharAvaliacaoCorporal(){
+                queryMensagens.style.display="none";
+                document.querySelector('.avaliacao-corporal').style.display="none";
+            }
+
+            function abrirConsultoriaPersonal(){
+                queryMensagens.style.display="block";
+                document.querySelector('.consultoria-personal').style.display="block";
+            }
+            function fecharConsultoriaPersonal(){
+                queryMensagens.style.display="none";
+                document.querySelector('.consultoria-personal').style.display="none";
+            }
+
+            function abrirConsultoriaPresencialOnline(){
+                queryMensagens.style.display="block";
+                document.querySelector('.consultoria-presencial-online').style.display="block";
+            }
+            function fecharConsultoriaPresencialOnline(){
+                queryMensagens.style.display="none";
+                document.querySelector('.consultoria-presencial-online').style.display="none";
+            }
+            
+            function abrirAtendimentoIndividual(){
+                queryMensagens.style.display="block";
+                document.querySelector('.atendimento-individual').style.display="block";
+            }
+            function fecharAtendimentoIndividual(){
+                queryMensagens.style.display="none";
+                document.querySelector('.atendimento-individual').style.display="none";
+            }
+        </script>
+    </body>
+
+</html>
