@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: white;
+    
+}
+section.main{
+    margin-left:25%;
+    width:50% ;
+    text-align: center;
+}
+
+
+.logo > img{
+    height: 200px;
+    width: 200px;
+}
+
+/* intro*/
+.intro{ 
+    text-align: center;
+    padding: 0 2%;
+    margin:20px;
+
+}
+.intro h1{
+    color: #6bbb82;
+}
+.intro h3{
+    color: #4D8E6D;
+}
+
+.intro BUTTon{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border:0;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+
+    background-image: url("./img/LOGOINSTA.png");
+    background-color: #6BBB82;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.intro BUTTon:hover{
+    cursor: pointer;
+    color:#6BBB82;
+    border: 3px solid #4D8E6D;
+    background-image: url("./img/LOGOINSTAH.png");
+    background-color: white;
+}
+
+
+/*Serviços*/
+.servicos{   
+    margin: 50px 0;
+    color: white;
+}
+
+.box{
+    background: #6BBB82;
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.box > h1{
+    text-align: center;
+}
+.box > p{
+    margin: 3px 0;
+    color: #6BBB82    ;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 17px;
+    /*border-bottom: 2px solid white;*/
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box > p:hover{
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.mensagens-servicos{
+    display: none;
+    color:#6BBB82 ;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.mensagens-servicos h1{
+    font-size: 40px;
+}
+.mensagens-servicos p{
+    margin:20px 10px;
+    font-size: 15px;
+}
+.close{
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #6BBB82;
+}
+.avaliacao-corporal,
+.consultoria-personal,
+.consultoria-presencial-online,
+.atendimento-individual{
+    
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+/*buttons*/
+.buttons div{
+    position:absolute;
+    z-index: 2;
+    margin-left:10;  
+}
+
+.buttons BUTTon{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border:0;
+    background-color: #6BBB82;
+    width: 100%;
+    height: 54px;
+    border-radius: 10px;
+}
+.buttons BUTTon:hover{
+    background-color:white;
+    color: #6BBB82;
+    border: 3px solid #4D8E6D;
+    cursor: pointer;
+} 
+
+.buttons .whatsapp{
+    background-image: url("./img/LOGOZAP.png");
+    background-color: #6BBB82;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.buttons .whatsapp:hover{
+    background-image: url("./img/LOGOZAPH.png");
+}    
+
+
+@media screen and (max-width: 700px){
+    section.main{
+        margin-left:10%;
+        width:80% ;
+    }
+}
+    
+@media screen and (max-width: 568px){
+    section.main{
+        margin-left:5%;
+        width:90% ;
+    }
+.avaliacao-corporal,
+.consultoria-personal,
+.consultoria-presencial-online,
+.atendimento-individual{
+    left: 20%;
+    top: 20%;
+    transform: translate(-12%,-12%);
+    background-color: aliceblue;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+}
